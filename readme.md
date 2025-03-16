@@ -83,7 +83,7 @@ Legal Doc Chatbot/
 ## Installation & Setup
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/YourUser/Legal-Document-CaseLaw-Analyzer.git
+   git clone https://github.com/deephabiswashi/Legal-Document-CaseLaw-Analyzer.git
    cd Legal-Document-CaseLaw-Analyzer
    ```
 
@@ -135,6 +135,37 @@ Legal Doc Chatbot/
 - `POST /query` - Query the `legal_docs` index, then generate an answer using Gemma model.
 - `POST /ingest-caselaw` - Ingest case law into `caselaw_index`.
 - `POST /query-caselaw` - Search `caselaw_index` for relevant documents, pass them to the Gemma model for an answer.
+
+---
+
+## Screenshots  
+
+### Homepage  
+![Homepage](screenshots/homepage.png)  
+
+### Query Results  
+![Results 1](screenshots/results1.png)  
+![Results 2](screenshots/results2.png)  
+
+### Backend Structure  
+![Backend](screenshots/backend.png) 
+
+---
+
+## Data Sources  
+
+The legal case documents used in this project were collected from the following sources:  
+
+- **[International Court of Justice - List of All Cases](https://www.icj-cij.org/list-of-all-cases)**  
+- **[Harvard Caselaw Access Project - California Cases](https://case.law/caselaw/#california)**  
+
+---
+
+## Website Demonstration  
+
+Watch the complete walkthrough of the project in this YouTube video:  
+
+[![Project Demo](https://img.youtube.com/vi/YbtQHw9PS0c/0.jpg)](https://youtu.be/YbtQHw9PS0c?si=4gwfgSf9rfQTHy7s)  
 
 ---
 
