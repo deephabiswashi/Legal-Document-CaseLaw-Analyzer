@@ -1,0 +1,36 @@
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore environment files
+env1/
+.env
+
+# Ignore data folders (assuming they contain raw case data)
+data/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore frontend dependencies (if applicable)
+node_modules/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE settings and workspace files
+.vscode/
+*.code-workspace
+
+# Ignore virtual environment for Python
+venv/
+.envrc
+
+# Ignore compiled Python files
+*.egg-info/
+*.pytest_cache/
