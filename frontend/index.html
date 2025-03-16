@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Legal Document Analyzer</title>
+  <!-- Note the "/static/" path for both CSS and JS -->
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="split-container">
+    <!-- Left Panel: UI-based Document Analyzer -->
+    <div class="left-panel">
+      <h1>Legal Document Analyzer</h1>
+
+      <!-- Document Upload Section -->
+      <section class="upload-section">
+        <h2>Upload Document</h2>
+        <form id="uploadForm">
+          <input type="file" id="documentFile" accept="image/*,application/pdf" />
+          <button type="submit">Upload Document</button>
+        </form>
+        <div id="response"></div>
+      </section>
+
+      <hr />
+
+      <!-- Legal Query Section -->
+      <section class="legal-query-section">
+        <h2>Legal Query</h2>
+        <form id="queryForm">
+          <input type="text" id="queryInput" placeholder="Enter your legal query" />
+          <button type="submit">Ask Query</button>
+        </form>
+        <div id="queryResponse"></div>
+      </section>
+    </div>
+
+    <!-- Right Panel: Case Law Analyzer -->
+    <div class="right-panel">
+      <h1>Case Law Analyzer</h1>
+
+      <!-- Case Law Ingestion Section -->
+      <section class="caselaw-ingest-section">
+        <h2>Ingest Case Law Data</h2>
+        <button id="ingestCaselawButton">Ingest Case Law</button>
+        <div id="ingestCaselawResponse"></div>
+      </section>
+
+      <hr />
+
+      <!-- Case Law Query Section -->
+      <section class="caselaw-query-section">
+        <h2>Case Law Query</h2>
+        <input type="text" id="caselawQueryInput" placeholder="Enter your case law query" />
+        <button id="caselawQueryButton">Ask Case Law Query</button>
+        <div id="caselawQueryResponse"></div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/script.js"></script>
+</body>
+</html>
